@@ -11,7 +11,7 @@ void add_mul_4param(int first, int second, int *sum, int *product)
     *product = first * second;
 }
 
-void add_mul_2params(int *first, int *second)
+void add_mul_2param(int *first, int *second)
 {
     *first = *second + *first;
     *second = (*first - *second) * *second;
