@@ -11,9 +11,10 @@
 int integer_div(int a, int b)
 {
     int res = 0;
+
     if (b == 0)
         return (0);
-    res = a / b;
+        res = a / b;
     return (res);
 }
 
@@ -40,6 +41,6 @@ void exec_div(division_t *operation)
     if (operation->div_type == DECIMALE) {
         dec = ((decimale_op_t *)operation->div_op);
         dec->res = decimale_div(dec->a, dec->b);
-   }
+    }
 }
 
