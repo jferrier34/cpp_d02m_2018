@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2019
-** 
+**
 ** File description:
-** 
+**
 */
 
 #include <stdio.h>
@@ -12,12 +12,12 @@ void	exec_operation(instruction_type_t instruction_type , void *data)
 {
 	if (instruction_type == ADD_OPERATION)
 	{
-		exec_add((addition_t *) data);
+	    exec_add(((instruction_t *)data)->operation);
 	}
 	if (instruction_type == DIV_OPERATION)
 	{
-		exec_div((division_t *) data);
-	} 
+	    exec_div(((instruction_t *)data)->operation);
+	}
 }
 
 void	exec_instruction(instruction_type_t instruction_type , void *data)

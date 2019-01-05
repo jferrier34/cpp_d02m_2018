@@ -5,6 +5,10 @@
 ** ex04
 */
 
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
 #ifndef CASTMANIA_H_
 # define CASTMANIA_H_
 
