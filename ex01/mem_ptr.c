@@ -31,7 +31,6 @@ int my_strlen(char const *str)
     return (nbr);
 }
 
-
 char *my_strcpy(char *dest, char const *src)
 {
     int i = 0;
