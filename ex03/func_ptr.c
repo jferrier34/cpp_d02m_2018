@@ -8,7 +8,6 @@
 #include "func_ptr.h"
 #include <string.h>
 
-
 void print_normal(const char *str)
 {
     printf("%s\n", str);
@@ -16,7 +15,7 @@ void print_normal(const char *str)
 
 void print_reverse(const char *str)
 {
-    int i = strlen(str);
+    int i = strlen(str) - 1;
 
     if (str == NULL) {
         return ;
