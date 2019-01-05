@@ -13,10 +13,12 @@ void tab_to_2dtab(const int *tab, int length, int width, int ***res)
     int i = 0;
 
     *res = malloc(sizeof(int*) * length);
+    int **r = *res;
     for (; i < length; i++) {
+        r[i] = malloc(width * sizeof(int) + 1);
         for (int j = 0; j < width; j++) {
-            (*res)[i] = malloc(width * sizeof(int) + 1);
-            (*res)[i][j] = tab[i * width + j];
+            r[i][j] = *tab;
+            tab++;
         }
     }
 }
